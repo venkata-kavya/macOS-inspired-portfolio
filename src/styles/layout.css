@@ -1,0 +1,28 @@
+* {
+  @apply m-0 p-0;
+}
+
+html, body, #root {
+  @apply h-full overflow-hidden;
+  font-family: "Inter" !important;
+  overscroll-behavior: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button, input, textarea, select {
+  font-family: "Inter" !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+.window-bound {
+  pointer-events: none;
+}
+
+.window-bound > * {
+  pointer-events: auto;
+}

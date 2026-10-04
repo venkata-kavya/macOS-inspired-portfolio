@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./fonts/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./fonts/InterVariable-Italic.woff2") format("woff2");
+}
+
+:root {
+  --font-system: "Inter";
+  --font-display: "Inter";
+  --font-mono: "Inter";
+  --font-rounded: "Inter";
+  --font-avenir: "Inter";
+  --font-terminal: "Inter";
+}
+
+html, body, #root, body *, button, input, textarea, select, option {
+  font-family: "Inter" !important;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  letter-spacing: -0.01em;
+  font-feature-settings: "cv11" 1, "ss01" 1;
+  cursor: default;
+}
+
+.font-avenir, .font-terminal, .font-display, .font-rounded, .font-system {
+  font-family: "Inter" !important;
+}
+
+.font-tabular {
+  font-family: "Inter" !important;
+  font-feature-settings: "tnum" 1, "cv11" 1;
+}
